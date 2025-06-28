@@ -4,19 +4,39 @@ const path = require('path');
 const fs = require('fs');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 // Servir archivos estáticos desde /public
 app.use(express.static(path.join(__dirname, 'public')));
 
 // Ruta para API de eventos
 app.get('/api/eventos', (req, res) => {
-  const filePath = path.join(__dirname, 'api', 'events.json');
+  const filePath = path.join(__dirname, 'public', 'api', 'events.json');
   fs.readFile(filePath, 'utf8', (err, data) => {
     if (err) return res.status(500).json({ error: 'Error al leer eventos' });
     res.json(JSON.parse(data));
   });
 });
+app.get('/equipo', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'equipo.html'));
+});
+
+app.get('/eventos', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'eventos.html'));
+});
+
+// Y así con las demás páginas
+app.get('/nosotros', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'nosotros.html'));
+});
+
+app.get('/noticias', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'noticias.html'));
+});
+app.get('/galeria', (req, res) => {
+  res.sendFile(path.join(__dirname, 'public', 'galeria.html'));
+});
+
 
 // Servir el index.html
 app.get('/', (req, res) => {
