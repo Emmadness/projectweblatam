@@ -1,0 +1,32 @@
+[
+  {
+  "titulo": "Convoy Andes",
+  "tipo": "Convoy",
+  "juego": "ETS2",
+  "servidor": "Event Server",
+  "ruta": "Santiago → Mendoza",
+  "fecha_encuentro": "28 jun 2025, 23:00 GMT-4",
+  "fecha_inicio": "29 jun 2025, 00:00 GMT-4",
+  "orden_fecha": "2025-06-28"
+},
+{
+  "titulo": "Convoy Andes",
+  "tipo": "Convoy",
+  "juego": "ETS2",
+  "servidor": "Event Server",
+  "ruta": "Santiago → Mendoza",
+  "fecha_encuentro": "28 jun 2025, 23:00 GMT-4",
+  "fecha_inicio": "29 jun 2025, 00:00 GMT-4",
+  "orden_fecha": "2025-06-28"
+},
+{
+  "titulo": "TuMama",
+  "tipo": "Convoy",
+  "juego": "ETS2",
+  "servidor": "Event Server",
+  "ruta": "Santiago → Mendoza",
+  "fecha_encuentro": "28 jun 2025, 23:00 GMT-4",
+  "fecha_inicio": "30 jun 2025, 00:00 GMT-4",
+  "orden_fecha": "2025-06-27"
+}
+]
